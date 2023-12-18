@@ -976,6 +976,12 @@ tr:hover {
     color: white !important;
 		font-weight: bold;
 }
+
+.blank {
+  height: 100px;
+  opacity: 0;
+}
+
 @media only screen and (max-width: 599px) {
 		.wp-block-navigation__responsive-container, .wp-block-navigation-item__label {
     	color: white !important;
@@ -1124,10 +1130,13 @@ tr:hover {
 		display: none;
 	}
 .icon-container {
-		margin: -0px 0px 0 0;
+		margin: -0px -10px 0 0;
 }
 .icon-text {
     font-size: 15px;
+    margin-bottom: 20px !important;
+    margin-left: 10px !important;
+    margin-right: 25px !important;
 }
 }
 @media only screen and (max-width: 762px) {
@@ -1210,6 +1219,9 @@ tr:hover {
 	.contact-buttons-container {
 		margin: -50px 0 -50px -25px;
 	}
+  .blank {
+    display: none;
+}
 }
 @media only screen and (max-width: 632px) {
 	#about-us-text {
@@ -1268,6 +1280,15 @@ tr:hover {
 	.custom-logo {
 		width: 80px;
 	}
+  	/* About us page icons. */
+	.icon {
+		width: 50px;
+		height: 50px;
+	}
+	.icon-text {
+		font-size: 14px !important;
+    margin: 0px 20px 0px 7px !important;
+	}
 }
 @media only screen and (max-width: 385px) {
 	/* Home page. */
@@ -1282,15 +1303,6 @@ tr:hover {
 	}
 	#about-us-heading {
 		font-size: 40px !important;
-	}
-	/* About us page icons. */
-	.icon {
-		width: 50px;
-		height: 50px;
-	}
-	.icon-text {
-		font-size: 14px !important;
-    margin: 0px 20px 30px 7px !important;
 	}
 }
 @media only screen and (max-width: 350px) {
@@ -1963,7 +1975,7 @@ window.addEventListener('scroll', function() {
 <div class="wp-block-group">
 <h2 id="about-us-heading" class="wp-block-heading" style="font-style: normal; font-weight: 400;">About Us</h2>
 <p id="about-us-text" class="text-animation">Welcome to Esprecialty Coffee, where we&#8217;re all about embracing the little moments in life. With a mission to create a peaceful escape for young professionals, our vision is to inspire mindful enjoyment in a serene retreat.</p>
-<p id="about-us-text" class="text-animation">Our cozy coffee retreat <a href="./../esprecialty-coffee/location/index.html">located just outside the CBD</a> is a perfect spot for you to unwind. Lush greenery, warm lighting, and good vibes all around. We’re here to serve you delightful treats, inviting you to savor life’s simple pleasures.</p>
+<p id="about-us-text" class="text-animation">Our cozy coffee retreat <a href="./../location/index.html">located just outside the CBD</a> is a perfect spot for you to unwind. Lush greenery, warm lighting, and good vibes all around. We’re here to serve you delightful treats, inviting you to savor life’s simple pleasures.</p>
 <p><!-- Icons --></p>
 <div class="icon-row">
 <div class="icon-container" id="icon1-toggle"></div>
@@ -1977,6 +1989,10 @@ window.addEventListener('scroll', function() {
 </div>
 </div>
 </div>
+
+
+<hr class="blank">
+
 <hr class="line-footer">
 </main>
 </div>

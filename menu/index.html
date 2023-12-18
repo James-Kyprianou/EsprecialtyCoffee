@@ -601,11 +601,28 @@ p, h1, h2, h3 {
 	font-size: calc(15px + 0.5vw);
 }
 .veg {
+    color: rgb(20, 219, 63);
+    text-align: right;
+    font-size: calc(10px + 0.4vw);
+    font-weight: bold;
+    margin: -30px 8px -0px 0;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+}
+  .veg span {
+    background-color: #00000073;
+    padding: 0 5px;
+    border-radius: 3px;
+  }
+/*
+.veg {
 	color: lime;
 	text-align: right;
 	font-size: calc(10px + 0.4vw);
-	margin: -30px 8px -15px 0;
+	margin: -30px 8px -35px 0;
+  padding-top: 35px !important;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 1);
 }
+*/
 .sub-menu ul li:not(:first-child)::before {
   content: "\2022"; /* Unicode character for a dot. */
   color: white; 
@@ -1145,6 +1162,9 @@ tr:hover {
 	.contact-buttons-container {
 		margin: -50px 0 -50px -25px;
 	}
+  .veg {
+    margin: -20px 8px -0px 0;
+  }
 }
 @media only screen and (max-width: 632px) {
 	#about-us-text {
@@ -1897,7 +1917,7 @@ window.addEventListener('scroll', function() {
 <div class="menu-row">
 <div class="menu-item">
       <img decoding="async" src="./../wp-content/uploads/2023/09/pancakes.jpeg" alt="Sweet pancake stack image">
-<div class="veg">VEG</div>
+      <div class="veg"><span>VEG</span></div>
 <div class="menu-title">Sweet Pancake Stack</div>
 <div class="menu-description">Fluffy pancakes filled with caramel, topped with fresh strawberries, banana, and cream.</div>
 <div class="menu-price">$17.95</div>
@@ -1912,7 +1932,7 @@ window.addEventListener('scroll', function() {
 </div>
 <div class="menu-item">
       <img decoding="async" src="./../wp-content/uploads/2023/09/pexels-foodie-factor-566566-scaled.jpg" alt="Avocado toast image">
-<div class="veg">VEG</div>
+      <div class="veg"><span>VEG</span></div>
 <div class="menu-title">Eggs and Avocado on Toast</div>
 <div class="menu-description">Boiled eggs, avocado, pine nuts, cracked pepper, and lime dressing on toast.</div>
 <div class="menu-price">$15.95</div>
@@ -1929,7 +1949,7 @@ window.addEventListener('scroll', function() {
 </div>
 <div class="menu-item">
       <img decoding="async" src="./../wp-content/uploads/2023/09/avocardoes-1.jpeg" alt="Avocado toast image">
-<div class="veg">VEG &#x2022; VGN</div>
+      <div class="veg"><span>VEG &#x2022; VGN</span></div>
 <div class="menu-title">Avocado Toast</div>
 <div class="menu-description">Mashed avocado on toast with spinach, and olive oil dressing.</div>
 <div class="menu-price">$15.95</div>
@@ -1986,7 +2006,7 @@ window.addEventListener('scroll', function() {
 </div>
 <div class="menu-item">
       <img decoding="async" src="./../wp-content/uploads/2023/09/taco0.jpg" alt="Veggie taco image">
-<div class="veg">VEG &#x2022; VGN</div>
+      <div class="veg"><span>VEG &#x2022; VGN</span></div>
 <div class="menu-title">Veggie Taco</div>
 <div class="menu-description">Corn, capsicum, tomato, onion, lettuce, served with salsa.</div>
 <div class="menu-price">$18.95</div>
@@ -1996,7 +2016,7 @@ window.addEventListener('scroll', function() {
 <div class="menu-row">
 <div class="menu-item">
       <img decoding="async" src="./../wp-content/uploads/2023/09/salad.jpg" alt="Healthy salad mix image">
-<div class="veg">VEG &#x2022; VGN</div>
+      <div class="veg"><span>VEG &#x2022; VGN</span></div>
 <div class="menu-title">Healthy Salad Mix</div>
 <div class="menu-description">Lettuce, carrot, spinach, tomato, capsicum with a balsamic vinegar dressing.</div>
 <div class="menu-price">$15</div>
@@ -2037,8 +2057,9 @@ window.addEventListener('scroll', function() {
 </div>
 <div class="menu-item">
       <img decoding="async" src="./../wp-content/uploads/2023/09/pexels-photo-3081657.jpeg" alt="Chocolate date cupcake image">
+      <div class="veg"><span>VEG &#x2022; VGN</span></div>
 <div class="menu-title">Chocolate Date Cupcake</div>
-<div class="menu-description">Chocolate dates with vanilla icing, topped with cherries. </div>
+<div class="menu-description">Chocolate dates with vegan vanilla icing, topped with cherries. </div>
 <div class="menu-price">$6</div>
 
 </div>
